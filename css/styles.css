@@ -63,6 +63,12 @@ main > .tagline {
 	margin-bottom: -0.20rem;
 }
 
+img {
+	padding: 10px;
+	width:56px;
+	height: 56px;
+}
+
 .devto svg {
 	margin-bottom: -0.20rem;
 	margin-left: 0.675rem;;
