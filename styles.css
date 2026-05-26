@@ -12,7 +12,7 @@ img, picture, video, canvas, svg {
     --light-color: #e8e9ea;
     --dark-color: #1a1c1f;
     --accent-blue: #2fb8e6;
-    --accent-red: tomato;
+    --accent-red: rgb(241, 37, 37)
 }
 
 body {
@@ -68,7 +68,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding-right: 20%;
+    padding-right: 12%;
     transform-style: preserve-3d;
     transform: 
         rotateY(-25deg)
@@ -84,6 +84,7 @@ main {
                 10px 12px 2px rgba(0,0,0,.3),
                 0 2px 0 rgba(0,0,0,.3);
     transition: transform .1s ease-out, box-shadow .1s ease;
+    text-decoration: none;
 }
 
 .item.big {
@@ -100,13 +101,12 @@ main {
     font-weight: 800;
     letter-spacing: .5px;
     line-height: 1.5;
-    /* background-color: aqua; */
 }
 
 .item small {
     font-size: 1rem;
     line-height: 1.5;
-    letter-spacing: 0.7px;
+    /* letter-spacing: 0.6px; */
     color: #36435a;
 }
 
@@ -125,6 +125,10 @@ main {
   position: absolute; left: 0; top: 0; bottom: 0; width: 10px;
   background: var(--accent-blue);
   opacity: 0;
+}
+
+.item.big::before {
+    background: var(--accent-red);
 }
 
 .item:hover::before { opacity: 1; }
