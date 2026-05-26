@@ -116,16 +116,20 @@ main {
      color: #36435a;
 }
 
-.item.big:hover {
-    cursor: not-allowed;
+.profile-img::selection {
+    background-color: transparent;
 }
 
 .item::selection {
     background-color: transparent;
+    color: var(--accent-blue);
+}
+
+a.item:hover {
+    cursor: pointer;
 }
 
 .item:hover {
-    cursor: pointer;
     transform: 
         translateZ(28px)
         skewY(-1deg)
